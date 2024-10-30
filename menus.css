@@ -1,41 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: Inter, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 .menu-container {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
 }
 .menu-item-container {
   padding: 10px;
   margin: 10px;
-  border: 1px solid #777;
-  background-color: #bbb;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255);
   font-weight: bold;
   position: relative;
+  max-height: 300px;
 }
 
 .menu-item-container:hover{
-   border: 1px solid wheat;
-   background-color: rgb(15, 104, 15);
-   box-shadow: 0 0 10px #222;
+   border: 1px solid rgb(255, 255, 255);
+   background-color: rgb(37, 151, 37);
+   box-shadow: 0 0 10px rgb(255, 255, 255);
    }
 .menu-subitem-container{
   display: none;
   position: absolute;
-  background-color: #bbb;
-
+  background-color: rgb(255, 251, 251);
+  
 }
 .menu-item-container:hover .menu-subitem-container{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  flex-wrap: wrap;
   position: absolute;
   top: 42px;
   left: -4px;
   background-color: #fff;
   padding: 18px;
-  border:  3px solid black;
+  border:  3px solid rgb(255, 255, 255);
+  max-height: 570px;
 }
 .menu-subitem-container div {
   padding: 10px;
 }
  .menu-subitem-container div:hover {
    background-color: red;
+ }
+ .logo {
+   width: 15%;
+   height: 15%;
+   object-fit: cover;
  }
